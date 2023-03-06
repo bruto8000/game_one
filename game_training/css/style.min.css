@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Poppins;
+  font-display: swap;
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2") url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Poppins;
+  font-display: swap;
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2") url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2") url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Poppins;
+  font-display: swap;
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2") url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: poppins;
+  font-display: swap;
+  src: url("../fonts/poppins-medium.woff2") format("woff2") url("../fonts/poppins-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: poppins;
+  font-display: swap;
+  src: url("../fonts/poppins-semibold.woff2") format("woff2") url("../fonts/poppins-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: poppins;
+  font-display: swap;
+  src: url("../fonts/poppins-regular.woff2") format("woff2") url("../fonts/poppins-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: roboto;
+  font-display: swap;
+  src: url("../fonts/roboto-regular.woff2") format("woff2") url("../fonts/roboto-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+li {
+  margin: 0;
+  list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+  margin: 0;
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-size: 18px;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+}
+@media (max-width: 800.98px) {
+  ._container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+.voice {
+  height: 200px;
+  width: 400px;
+  border: 3px solid orange;
+  border-radius: 30px;
+}
+
+.voices {
+  display: none;
+}
+
+.voices_img {
+  height: 200px;
+  width: 300px;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+input[type=text] {
+  font-family: Poppins, sans-serif; /* 1 */
+  font-size: 14px; /* 1 */
+  line-height: inherit; /* 1 */
+  margin: 0; /* 2 */
+  color: rgba(255, 255, 255, 0.38);
+  background-color: rgb(40, 48, 54);
+  border: none;
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input[type=submit] {
+  margin: 0; /* 2 */
+  color: #fff;
+  background: #ff6e30;
+  border-radius: 8px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 36.12px;
+  cursor: pointer;
+  border: none;
+}
